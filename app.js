@@ -6,7 +6,7 @@ const pokemonButton = document.querySelector('#pokemonButton')
 const cardImage = document.querySelector('#cardImage')
 const baseUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
 
-//let set = false;
+
 
 
 pokemonButton.addEventListener ('click', function() {
@@ -20,7 +20,6 @@ pokemonButton.addEventListener ('click', function() {
 
 resetButton.addEventListener('click', function(){
     
-//document.getElementById('pokeImage').src = '';
 document.getElementById('pokeImage').remove('');
 
 
