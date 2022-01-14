@@ -6,23 +6,14 @@ const pokemonButton = document.querySelector('#pokemonButton')
 const cardImage = document.querySelector('#cardImage')
 const baseUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
 
-
-
-
 pokemonButton.addEventListener ('click', function() {
     const newImage = document.getElementById('pokeImage');
     newImage.src = `${baseUrl}${(Math.floor(Math.random()*152))}.png`;
     cardImage.appendChild(newImage)
-        
-
 })
 
-
-resetButton.addEventListener('click', function(){
-    
-document.getElementById('pokeImage').remove('');
-
-
+resetButton.addEventListener('click', function(){  
+    document.getElementById('pokeImage').remove('');
 }) 
 
 
